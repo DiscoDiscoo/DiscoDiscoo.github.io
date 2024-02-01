@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background.jpg);
+    
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 130px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-family: mv boli;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #ffffff;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 700px;
+    position: none;
+    left: 70px;
+}
+section .description p{
+    color: #ffffff;
+    font-family: mv boli;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 110px;
+    bottom: 160px;
+    line-height: 22px;
+}
+
+section .main_btn{
+    background: #000;
+    position: relative;
+    left: 123px;
+    bottom: 100px;
+    width: 165px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color: #ff0000;
+    margin-right: 5px;
+    text-decoration: none;
+    font-family: mv boli;
+}
+
+section .main_btn i{
+    color: #ff0000;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+
+
+/*About*/
+
+.about{
+    width: 100%;
+    height: 92vh;
+    padding: 70px 0;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+}
+
+
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img{
+    width: 700px;
+    position: relative;
+    top: 60px;
+}
+
+.about .about_main .about_text h1 span{
+    color: #ff0000;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 150px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.about .about_main .about_text p{
+    width: 500px;
+    text-align: justify;
+    margin-right: 130px;
+    line-height: 22px;
+    color: #ffffff;
+    font-family: mv boli;
+}
+
+
+.about .main_btn{
+    background: #000;
+    position: relative;
+    left: -700px;
+    bottom: -100px;
+    width: 165px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+
+section .main_btn a{
+    color: #ff0000;
+    margin-right: 5px;
+    text-decoration: none;
+    font-family: mv boli;
+}
+
+section .main_btn i{
+    color: #ff0000;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+.projects{
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(image/bg3.jpg);
+}
+
+.projects h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: mv boli;
+}
+
+.projects h1 span{
+    margin-left: 15px;
+    color: #ff0000;
+    font-family: mv boli;
+}
+
+.projects h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.projects .gallary_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.projects .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.projects .gallary_image_box .gallary_image img{
+    width: 100%;
+    transition: .3s;
+}
+
+.projects .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.projects .gallary_image_box .gallary_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #ff0000;
+    font-family: mv boli;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.projects .gallary_image_box .gallary_image:hover h3{
+    opacity: 1;
+}
+
+.projects .gallary_image_box .gallary_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+    font-family: mv boli;
+}
+
+.projects .gallary_image_box .gallary_image:hover p{
+    opacity: 1;
+}
+
+
+.projects .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #fa0000;
+    border-radius: 15px;
+}
